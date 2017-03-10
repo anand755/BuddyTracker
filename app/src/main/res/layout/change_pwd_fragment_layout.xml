@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24sp"
+        android:gravity="center"
+        android:text="Change Password"
+        android:textColor="#2755ED"
+        android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/et_current_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="32sp"
+            android:inputType="textPassword"
+            android:hint="* Please Enter Current password"
+            android:textColor="#2755ed"
+            android:singleLine="true"
+            android:textColorHint="#2755ED"
+            android:textSize="@dimen/text_size_tweenty" />
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="wrap_content"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24sp"
+            android:hint="* Please Enter New password"
+            android:textColor="#2755ed"
+            android:textColorHint="#2755ED"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_tweenty" />
+
+        <EditText
+            android:id="@+id/et_confirm_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24sp"
+            android:hint="* Please Enter Confirm password"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:textColor="#2755ed"
+            android:textColorHint="#2755ED"
+            android:textSize="@dimen/text_size_tweenty" />
+
+    <Button
+        android:id="@+id/btn_change_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="Change Password"
+        android:textColor="#2755ED"
+        android:layout_marginBottom="30dp"
+        android:textSize="@dimen/text_size_tweenty" />
+
+</LinearLayout>

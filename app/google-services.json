@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "48850020064",
+    "firebase_url": "https://buddytracker-d17d5.firebaseio.com",
+    "project_id": "buddytracker-d17d5",
+    "storage_bucket": "buddytracker-d17d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48850020064:android:08809c032bb81642",
+        "android_client_info": {
+          "package_name": "com.example.anandjha.buddytracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48850020064-dih1bujm6u2m2rq8vm6k44qgasp79ig4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEDozntYyoMbr31amwXg6etkif_WXp2iI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

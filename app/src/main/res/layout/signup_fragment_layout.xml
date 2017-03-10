@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24sp"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textColor="#fff"
+                android:textColorHint="#2755ED"
+                android:textSize="32sp" />
+
+            <EditText
+                android:id="@+id/et_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="32sp"
+                android:inputType="text"
+                android:hint="* Please Enter First Name"
+                android:textColor="#2755ed"
+                android:singleLine="true"
+                android:textColorHint="#2755ED"
+                android:textSize="@dimen/text_size_tweenty" />
+
+            <EditText
+                android:id="@+id/et_last_name"
+                android:layout_width="wrap_content"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24sp"
+                android:hint="* Please Enter Last Name"
+                android:textColor="#2755ed"
+                android:textColorHint="#2755ED"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_tweenty" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24sp"
+                android:hint="* Please Enter Mobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="#2755ed"
+                android:textColorHint="#2755ED"
+                android:textSize="@dimen/text_size_tweenty" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24sp"
+                android:hint="* Please Enter Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#2755ed"
+                android:singleLine="true"
+                android:textColorHint="#2755ED"
+                android:textSize="@dimen/text_size_tweenty" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24sp"
+                android:inputType="text"
+                android:hint="* Please Enter Address"
+                android:singleLine="true"
+                android:textColor="#2755ed"
+                android:textColorHint="#2755ED"
+                android:textSize="@dimen/text_size_tweenty" />
+
+            <EditText
+                android:id="@+id/et_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24sp"
+                android:hint="* Please Enter Password"
+                android:inputType="textPassword"
+                android:textColor="#2755ed"
+                android:textColorHint="#2755ED"
+                android:textSize="@dimen/text_size_tweenty" />
+
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24sp"
+                android:hint="* Please Enter Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="#2755ed"
+                android:textColorHint="#2755ED"
+                android:textSize="@dimen/text_size_tweenty" />
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Sign Up"
+                android:textColor="#2755ED"
+                android:layout_marginBottom="30dp"
+                android:textSize="@dimen/text_size_tweenty" />
+
+            <com.digits.sdk.android.DigitsAuthButton
+                android:id="@+id/bt_auth_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_registration"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#1f9bde"
+                android:text="Authentication"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:ems="10"
+        android:hint="Enter friend's mobile"
+        android:text=""
+        android:textColorHint="#2755ED">
+
+        <requestFocus />
+
+
+    </AutoCompleteTextView>
+
+    <LinearLayout
+        android:id="@+id/ll_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_frnd_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Rahul Goyal"
+                android:textColor="#2755ED"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_frnd_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="rahul@gmail.com"
+                android:textColor="#2755ED"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_frnd_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kondapur, Hyderabad"
+                android:textColor="#2755ED"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_add_frnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.7"
+            android:src="@drawable/ic_add" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="com.example.anandjha.buddytracker.activity.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="7dp"
+            android:text=""
+            android:layout_marginLeft="20dp"
+            android:maxLength="10"
+            android:inputType="number"
+            android:hint="Please Enter Mobile"
+            android:textColor="#2755ed"
+            android:textColorHint="#2755ED"
+            android:textSize="@dimen/text_size_tweenty" />
+
+        <EditText
+            android:layout_below="@id/et_mobile"
+            android:id="@+id/et_passwd"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="7dp"
+            android:hint="Please Enter Password"
+            android:textColor="#2755ED"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#2755ED"
+            android:textSize="@dimen/text_size_tweenty" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_below="@+id/et_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:layout_centerHorizontal="true"
+            android:textColor="#2755ED"
+            android:textSize="@dimen/text_size_tweenty" />
+
+        <RelativeLayout
+            android:layout_below="@+id/btn_login"
+           android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="New Here? Sign Up"
+                android:textColor="#2755ED"
+                android:textSize="12sp" />
+
+            <!--<TextView-->
+                <!--android:layout_toRightOf="@+id/tv_signup"-->
+                <!--android:id="@+id/tv_forgot_passwd"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:text="Forgot Password?"-->
+                <!--android:textColor="#2755ED"-->
+                <!--android:textSize="12sp" />-->
+
+            <com.digits.sdk.android.DigitsAuthButton
+                android:layout_toRightOf="@+id/tv_signup"
+                android:id="@+id/tv_forgot_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Forgot Password?" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
